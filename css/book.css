@@ -1,0 +1,49 @@
+<style>
+            body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+input[type=text],input[type=number],input[type=email],input[type=date],input[type=time],select {
+  width: 25%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-bottom: 2px solid black;
+  border: 2px solid rgb(223, 22, 22);
+  border-radius: 3px;}
+  .boo{
+    padding:10px;
+  margin-left:150px;
+  margin-right:150px;
+  text-align: center;
+padding:7px;
+  
+ background-image: url("resss.png");
+background-repeat: no-repeat;
+ background-size: cover;
+
+  overflow: auto;
+  }
+label{
+color:white;
+}
+h1{
+color:black;
+font-size:40px;
+text-align:center;
+} 
+button {
+  background-color: rgb(223, 22, 22); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+        </style>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="bank.css">
+        <title>Payment</title>
+        
+    </head>
+    <body>
+	<form action="insertc.php" method="post">
+<h1>Payment</h1><hr>
+        <div class="bo">
+       
+        <label> Name on card : </label><br>
+        <input type="text"  name="cname" required><br>
+        <label >Credit card number :</label><br>
+        <input type="text" name="cnum" required><br>
+        <label> Exp month: </label><br>
+		<input type="text" name="cmonth" required><br>
+        <label> Exp Year : </label><br>
+		<input type="text" name="cyear" required><br>
+        <label>CVV:  </label><br>
+        <input type="text"  name="ccvv" required><br>
+        <label> Pincode: </label><br>
+        <input type="text"  name="cpin" required><br>
+		<label> Address : </label><br>
+        <input type="text"  name="cadd" required><br>
+        <button><input type="submit" value="submit">Pay Now </button>
+        </div>
+	<form>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="sign.css">
+  </head>
+  <body>
+    <form action="inserta.php" method="post">
+    <script>
+      function vali(){
+        var a =document.getElementById("password").value;
+        var b =document.getElementById("confirmpassword").value;
+        if(a.length<5){
+          document.getElementById("messages").innerHTML="** password length should be greater than 5";
+          return false;
+        }
+        if(a!=b){
+          document.getElementById("messagess").innerHTML="** password and confirm password not matching";
+          return false;
+        }
+      }
+    </script>
+    <div class="user">
+      <header class="user__header">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt="" />
+          <h1 class="user__title">Registration form</h1>
+      </header>
+      
+      <form onsubmit="return vali()">
+       <p class="form">
+        
+          <div class="form__group">
+              <input type="text" placeholder="First name" class="form__input" name="fname" required/><br>
+          </div>
+
+          <div class="form__group">
+            <input type="text" placeholder="last name" class="form__input" name ="lname" required/><br>
+        </div>
+          
+          <div class="form__group">
+              <input type="email" placeholder="Email" class="form__input" name="emails" required /><br>
+          </div>
+          
+          <div class="form__group">
+              <input type="password" placeholder="Password" id ="password" class="form__input" name="pword" value="" required/><br>
+          <span id="messages" style="color: red;"></span><br><br>
+            </div>
+          <div class="form__group">
+            <input type="password" placeholder="confirm Password" id="confirmpassword" class="form__input" name="cpassword" value=""required /><br>
+            <span id="messagess" style="color: red;"></span><br><br> 
+          </div>
+		  <div class="form__group">
+            <input type="text" placeholder="Gender" id="gender" class="form__input" name="sex" value=""required /><br>
+             
+          </div>
+           
+<div class="form__group">
+  <input type="number" placeholder="Age" min="18" max="90"  class="form__input" required/><br>
+</div>
+          <input type ="submit" class="btn" value="submit">
+</p>
+    </form> 
+ 
+  </div>
+</form> 
+  </body>
+</html>

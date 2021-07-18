@@ -1,0 +1,60 @@
+
+            body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+
+    
+    background-image: url("ba.png");
+background-repeat: no-repeat;
+ background-size: cover;
+    
+}
+
+
+* {
+  box-sizing: border-box;
+}
+input[type=text],input[type=number],input[type=email],select,textarea {
+  width: 45%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-bottom: 2px solid black;
+  border: 2px solid rgb(223, 22, 180);
+  border-radius: 10px;}
+  
+.bo{
+    
+margin-right:520px;
+  margin-left:1px;
+  text-align: center;
+padding:7px;
+  
+opacity:0.8;
+  overflow: auto;
+  }
+button {
+  background-color: rgb(231, 89, 200); 
+  border: none;
+cursor:pointer;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+border-radius: 10px;
+}
+button:hover{
+box-shadow: 10px 10px 13px 0px rgba(224,119,224,1);}
+  h1{
+font-size:60px;
+font-family: 'Tinos', serif;
+color:white;
+text-align:center;
+}   
+label{
+font-size:20px;
+color:white;
+font-family: 'Tinos', serif;
+}   
