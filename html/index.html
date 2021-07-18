@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="part1.css">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>BINGO CAFE</title>
+    </head>
+    <body>
+        <div class="navbar">
+        <a class="active"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        <a href="updates.html"><i class="fa fa-id-card-o" aria-hidden="true"></i>Offers</a>   
+        <a href="menu.html"><i class="fa fa-cutlery" aria-hidden="true"></i>Menu</a>  
+        <a href="book.html"><i class="fa fa-user-circle" aria-hidden="true"></i>Book a Table</a>
+        <div class="topnav-right">
+            <a href="sign.html"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Sign Up</a> 
+            <a href="login.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Login In</a>
+            </div>
+        </div><br><br><br>
+        <div class="about-section">
+            <h1>About Us <br><br> BINGO Restaurant </h1><br>
+            <p>. . Good friends,Good food,Happy times . .</p>
+            <pre>The   fondest  memories  are  madewhen  gathered  around  the  table </pre>
+          </div><br>
+          <h2 style="text-align:center"> CLIPS </h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 /4</div>
+    <img src="ta.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2/ 4</div>
+    <img src="park.png" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div class="numbertext">3 /4</div>
+    <img src="pasta.png" style="width:100%">
+  </div>
+<div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="biriyani.png" style="width:100%">
+  </div>
+
+
+  
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="ta.png" style="width:100%" onclick="currentSlide(1)" alt="Table">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="park.png" style="width:100%" onclick="currentSlide(2)" alt="Kid's Play Area ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pasta.png" style="width:100%" onclick="currentSlide(3)" alt="Pasta">
+    </div>
+<div class="column">
+      <img class="demo cursor" src="biriyani.png" style="width:100%" onclick="currentSlide(4)" alt="Biriyani">
+    </div>
+ 
+   
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script><br><br>
+    <div class="Location">
+  <h1>Location</h1>
+  <p>Opposite to Paradise Textiles ,5th cross main road,Gandhi Nagar.</p>
+  <p>Hosur</p>
+</div>
+    </body>
+</html>
